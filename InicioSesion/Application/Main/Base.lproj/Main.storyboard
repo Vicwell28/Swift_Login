@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InicioSesion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FVm-3r-sS7">
+                                <rect key="frame" x="27.666666666666657" y="305.66666666666669" width="320" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C89-AB-eOX">
+                                <rect key="frame" x="27.666666666666657" y="466.66666666666669" width="320" height="41.333333333333314"/>
+                                <color key="backgroundColor" name="White"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Iniciar sesion">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Black"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook" translatesAutoresizingMaskIntoConstraints="NO" id="2CP-GK-hNP">
+                                <rect key="frame" x="20.666666666666657" y="90.333333333333314" width="334" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2CP-GK-hNP" secondAttribute="height" multiplier="167:64" id="dq1-T9-Tdh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-n7-TbD">
+                                <rect key="frame" x="145" y="670" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-vZ-4NH">
+                                <rect key="frame" x="27.666666666666657" y="387" width="320" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Facebook"/>
+                        <constraints>
+                            <constraint firstItem="2CP-GK-hNP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.38" id="2Ax-wh-1Kc"/>
+                            <constraint firstItem="FVm-3r-sS7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="8QW-Dn-OQ9"/>
+                            <constraint firstItem="2CP-GK-hNP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.890667" id="AAb-uk-tBQ"/>
+                            <constraint firstItem="C89-AB-eOX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CE7-Xn-lRe"/>
+                            <constraint firstItem="C89-AB-eOX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="80:203" id="EHH-Xp-aCV"/>
+                            <constraint firstItem="hEh-vZ-4NH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.853333" id="KIn-tc-nDN"/>
+                            <constraint firstItem="hEh-vZ-4NH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kaq-Aq-ObV"/>
+                            <constraint firstItem="C89-AB-eOX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.853333" id="PcI-7d-6Xb"/>
+                            <constraint firstItem="FVm-3r-sS7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.853333" id="WoF-uJ-Zax"/>
+                            <constraint firstItem="FVm-3r-sS7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="80:203" id="bSd-wh-zSw"/>
+                            <constraint firstItem="hEh-vZ-4NH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="80:203" id="dJ7-Ig-vP9"/>
+                            <constraint firstItem="FVm-3r-sS7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2c-yl-7Hd"/>
+                            <constraint firstItem="C89-AB-eOX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="s4y-af-Lpl"/>
+                            <constraint firstItem="2CP-GK-hNP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uAE-Oq-Ydg"/>
+                            <constraint firstItem="hEh-vZ-4NH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y7y-Yn-Tqe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="53.940886699507388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Facebook" width="400" height="230"/>
+        <namedColor name="Black">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Facebook">
+            <color red="0.2196078431372549" green="0.34509803921568627" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
